@@ -146,4 +146,5 @@ if (number1 > number2){
     console.log('Eles são iguais.')
 }
 
+
 console.log();
