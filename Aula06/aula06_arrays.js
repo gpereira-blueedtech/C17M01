@@ -69,9 +69,9 @@ let idades = [20, 22, 18];
 
 
 
-let filmes = ['Mad Max', 'Jurassic Park', 'Matrix']
+// let filmes = ['Mad Max', 'Jurassic Park', 'Matrix']
 
-console.log(filmes);
+// console.log(filmes);
 
 // let novoFilme = prompt('Qual filme deseja adicionar? ');
 
@@ -79,20 +79,123 @@ console.log(filmes);
 // filmes.push(novoFilme);
 
 
-let quantidade = +prompt('Quantos filmes você deseja adicionar? ');
-let count = 0
 
-while (count < quantidade){
-    let novoFilme = prompt('Qual filme deseja adicionar? ');
 
-    // O método push vai adicionar um novo valor ao FINAL da lista.
-    filmes.push(novoFilme);
-    count++
-}
+
+
+// let quantidade = +prompt('Quantos filmes você deseja adicionar? ');
+// let count = 0
+
+// while (count < quantidade){
+//     let novoFilme = prompt('Qual filme deseja adicionar? ');
+
+//     // O método push vai adicionar um novo valor ao FINAL da lista.
+//     filmes.push(novoFilme);
+//     count++
+// }
+
+// console.log(filmes);
+
+
+
+
+
+
+//          ### EXERCICIOS
+
+/*
+Faça um Programa que leia 20 números inteiros e armazene-os num array. 
+Armazene os números pares no array PAR e os números IMPARES no array IMPAR.
+Imprima os três vetores.
+*/
+
+// let contador = 0
+// let arrayGeral = [];
+// let arrayPar = [];
+// let arrayImpar = [];
+// let limite = 10
+
+// while (contador < limite){
+//     let numero = +prompt('Digite um número: ');
+//     arrayGeral.push(numero);
+//     contador++
+
+//     if (numero % 2 == 0){
+//         arrayPar.push(numero);
+//     } else {
+//         arrayImpar.push(numero);
+//     }
+// }
+
+// console.log('Array GERAL:');
+// console.log(arrayGeral);
+
+// console.log('Array PARES:');
+// console.log(arrayPar);
+
+// console.log('Array IMPARES:');
+// console.log(arrayImpar);
+
+
+
+
+
+// // Dessa forma eu consigo percorrer uma lista inteira, independente do número de elementos.
+// // A cada ciclo do while, ele vai acessar um elemento diferente da lista.
+// let countLista = 0
+// let filmes = [
+//     'Mad Max', 
+//     'Jurassic Park', 
+//     'Matrix',
+//     'O Exorcista',
+//     'Bacurau',
+//     'O Auto da Compadecida'
+// ]
+// let limiteLista = filmes.length
+
+
+// while (countLista < limiteLista){
+//     console.log(filmes[countLista]);
+//     countLista++
+// }
+
+
+
+
+
+
+let filmes = [
+    'Mad Max', 
+    'Jurassic Park', 
+    'Matrix',
+    'O Exorcista',
+    'Bacurau',
+    'O Auto da Compadecida'
+]
+
+// let filmeNovo = prompt('Qual filme deseja adicionar? ');
+
+// // Similar ao push(), porém adiciona o novo item ao início da lista.
+// // Nesse caso, todos os índices dos elementos que já estavam presentes são alterados.
+// filmes.unshift(filmeNovo);
+
+// console.log(filmes);
+
 
 
 console.log(filmes);
+console.log();
+let removidos = []
 
+// filmes.pop();
+let removido = filmes.pop();
+removidos.push(filmes.pop())
+
+
+
+console.log(filmes);
+console.log(removido);
+console.log(removidos);
 
 
 console.log();
