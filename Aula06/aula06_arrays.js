@@ -197,5 +197,4 @@ console.log(filmes);
 console.log(removido);
 console.log(removidos);
 
-
 console.log();
