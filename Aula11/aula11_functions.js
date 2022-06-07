@@ -88,6 +88,29 @@ dois números e um sinal de operador matemático (+, -, * ou /).
 Ela deve fazer o cálculo indicado pelo operador usando os dois número passados.
 */
 
+function calculadora(a, b, c){
+    let resultado = 0;
 
+    if (c == '+'){
+        resultado = a + b;
+    } else if (c == '-'){
+        resultado = a - b;
+    } else if (c == '*'){
+        resultado = a * b;
+    } else if (c == '/'){
+        resultado = a / b;
+    } else {
+        console.log('Operador inválido!');
+    }
+
+    console.log(resultado);
+}
+
+let op = prompt('Digite o operador: ');
+let n1 = +prompt('Digite um número: ');
+let n2 = +prompt('Digite outro número: ');
+
+
+calculadora(n1, n2, op)
 
 console.log();
