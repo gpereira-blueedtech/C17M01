@@ -37,15 +37,15 @@ const prompt = require("prompt-sync")();
 
 // //      ## PROMISES
 
-// function primeiraFuncao(parametro) {
-//     console.log('Bem vindo à função!');
+function primeiraFuncao(parametro) {
+    console.log('Bem vindo à função!');
 
-//     return new Promise((resolve, reject) => {
-//         console.log(`Essa é a primeira função, ela escreve: ${parametro}`);
+    return new Promise((resolve, reject) => {
+        console.log(`Essa é a primeira função, ela escreve: ${parametro}`);
  
-//         resolve(parametro);
-//     });
-// }
+        resolve(parametro);
+    });
+}
 
 // function segundaFuncao(parametro) {
 //     return new Promise((resolve, reject) => {
@@ -134,8 +134,8 @@ alteraNome(10)
 // Uma luz faiscante invade a sua tenda enquanto vc dorme.
 // – Acorde, vamos! - repete a voz feminina doce e ao mesmo tempo Régia.`)
 
-// setTimeout(function(){
-//     console.log(intro1)},1500) // O valor númerico passado como argumento é o tempo que vai aguardar (em ms)
+setTimeout(function(){
+    console.log(intro1)},1500) // O valor númerico passado como argumento é o tempo que vai aguardar (em ms)
 
 
 
